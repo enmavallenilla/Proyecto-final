@@ -78,7 +78,7 @@ body {
 
 .header {
     width: 100%;
-    background-image: linear-gradient(hsla(300, 1%, 21%, 0.493) 100%, rgb(0, 0, 0)), url(/img/imagen-header\ mobile.jpg);
+    background-image: linear-gradient(hsla(300, 1%, 21%, 0.493) 100%, rgb(0, 0, 0)), url(/Proyecto-final/img/imagen-header\ mobile.jpg);
     min-height: 20rem;
     background-size: cover;
     background-position: center;
@@ -149,7 +149,7 @@ body {
 
 .section__services {
     margin-top: 3rem;
-    background-image: linear-gradient(hsla(300, 1%, 21%, 0.623) 100%, rgb(0, 0, 0)), url(/img/imagen-de-fondo-precio.jpg);
+    background-image: linear-gradient(hsla(300, 1%, 21%, 0.623) 100%, rgb(0, 0, 0)), url(/Proyecto-final/img/imagen-de-fondo-precio.jpg);
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -386,7 +386,7 @@ body {
     /** Header **/
 
     .header {
-        background-image: linear-gradient(hsla(300, 1%, 21%, 0.493) 100%, rgb(0, 0, 0)), url(/img/imagen-header\ destokp.jpg);
+        background-image: linear-gradient(hsla(300, 1%, 21%, 0.493) 100%, rgb(0, 0, 0)), url(/Proyecto-final/img/imagen-header\ destokp.jpg);
         height: 35rem;
     }
 
