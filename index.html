@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script src="/js/app.js"> </script>
+
+
+
+    <div class="navegacion" id="navegacion">
+        <div class="navegacion__content contenedor">
+
+            <div class="nav__barra">
+                <img src="./img/Logo.jpg" alt="Imagen del logo" class="logo">
+
+
+
+                <figure class="icon__hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 6l16 0" />
+                        <path d="M4 12l16 0" />
+                        <path d="M4 18l16 0" />
+                    </svg>
+                </figure>
+
+                <nav class="nav nav--show">
+                    <a href="#about us" class="link">Nosotros</a>
+                    <a href="#services" class="link">Servicios</a>
+                    <a href="#promociones" class="link">promociones</a>
+                    <a href="#gallery" class="link">Gallery</a>
+                    <a href="#formulario" class="link">Agenda tu cita</a>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+
+        <div class=" contenedor">
+
+            <h1 class="header__title">Esthetic Entre Cejas y Pestañas</h1>
+
+        </div>
+
+    </header>
+
+
+    <section class="section__about contenedor" id="about us">
+
+        <h2 class="section__about__title">About <span> Us</span> </h2>
+
+        <p class="section__about__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor laudantium
+            aliquam dicta officia nostrum quia
+            rem molestiae sint commodi praesentium sit illo corporis, corrupti perferendis cumque culpa? Maxime, magni
+            rem!</p>
+
+    </section>
+
+
+    <section class="section__services" id="services">
+
+
+
+        <div class="services__content contenedor">
+
+            <h2 class="services__title">Servicios</h2>
+
+            <div class="services__contenedor__principal">
+
+                <div class="services__contenedor">
+                    <h3 class="services__contenedor__servicio">Depilacion de cejas</h3>
+                    <p class="services__contenedor__precio">$5</p>
+                </div>
+
+                <div class="services__contenedor">
+                    <h3 class="services__contenedor__servicio">Depilacion de cejas</h3>
+                    <p class="services__contenedor__precio">$5</p>
+                </div>
+
+                <div class="services__contenedor">
+                    <h3 class="services__contenedor__servicio">Depilacion de cejas</h3>
+                    <p class="services__contenedor__precio">$5</p>
+                </div>
+
+                <div class="services__contenedor">
+                    <h3 class="services__contenedor__servicio">Depilacion de cejas</h3>
+                    <p class="services__contenedor__precio">$5</p>
+                </div>
+
+                <div class="services__contenedor">
+                    <h3 class="services__contenedor__servicio">Depilacion de cejas</h3>
+                    <p class="services__contenedor__precio">$5</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="section__promociones" id="promociones">
+
+        <h2 class="promocion__title">Promociones</h2>
+        <div class="promociones__gallery">
+            <img src="/img/promo mama1.jpg" alt="imagen promo mama1" class="promocion__img">
+
+            <img src="/img/promo2.jpg" alt="imagen promo mama2" class="promocion__img">
+
+            <img src="/img/promo mama3.jpg" alt="imagen promo mama3" class="promocion__img">
+        </div>
+    </section>
+
+
+    <section class="gallery" id="gallery">
+
+        <img src="/img/pestañas1.jpg" alt="imagen de una pestaña" class="gallery__img">
+
+        <img src="/img/pestañas2.jpg" alt="imagen de una pestaña" class="gallery__img">
+
+        <img src="/img/uñas1.jpg" alt="imagen de unas uñas " class="gallery__img">
+
+        <img src="/img/uñas2.jpg" alt="imagen de unas uñas" class="gallery__img">
+
+        <img src="/img/uñas3.jpg" alt="imagen de unas uñas" class="gallery__img">
+
+
+    </section>
+
+
+    <section class="section__formulario" id="formulario">
+
+        <form action="https://formspree.io/f/mzbqwlod" method="post" class="form contenedor">
+
+            <h2 class="form__title">Agenda tu Cita</h2>
+
+            <div class="form__contendor">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required name="nombre">
+            </div>
+
+
+            <div class="form__contendor--date">
+
+                <label for="date"> Dia de la cita:</label>
+                <input type="date" name="fecha" id="date" min="2023-05-01" max="2023-06-30">
+                <input type="time" name="time">
+            </div>
+
+
+
+            <div class="form__content__servicios">
+
+                <label>Servicio que desea realizarse:</label>
+
+                <div class="form__servicios__contenedor">
+
+                    <div class="form__servicios__item">
+                        <label for="epilacion" class="form__title__label">Epilacion de cejas</label>
+                        <input type="checkbox" name="epilacion de cejas" id="epilacion">
+                    </div>
+
+                    <div class="form__servicios__item">
+                        <label for="pestañas">Pestañas</label>
+                        <input type="checkbox" name="pestañas" id="pestañas">
+                    </div>
+
+
+
+                    <div class="form__servicios__item">
+
+                        <label for="uñas">Uñas</label>
+                        <input type="checkbox" name="Uñas" id="uñas">
+                    </div>
+                </div>
+
+                <img src="/img/Logo.jpg" alt="Logo esthetic" class="form__logo">
+
+                <button class="form__button">Enviar</button>
+
+        </form>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__content contenedor">
+
+
+            <h2 class="footer__title">Siguenos en Nuestras Cuentas</h2>
+
+            <div class="footer__contenedor__webs">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M16.5 7.5l0 .01" />
+                    </svg></a>
+
+
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

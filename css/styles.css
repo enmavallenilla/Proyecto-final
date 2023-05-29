@@ -1,0 +1,538 @@
+:root {
+    --color-principal: #f7cb08;
+    --black: #000000;
+    --white: #ffffff;
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+
+/** Navegacion **/
+.navegacion {
+
+    background-color: #0a0a0a9a;
+    position: relative;
+}
+
+.nav__barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 6rem;
+
+}
+
+.nav--show {
+    display: flex;
+}
+
+.nav {
+    display: none;
+    flex-direction: column;
+    padding: 1rem 10rem 0 2rem;
+    position: absolute;
+    background-color: #000000;
+    bottom: 0;
+    top: 2rem;
+
+}
+
+
+.link {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.logo {
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/** Header **/
+
+.header {
+    width: 100%;
+    background-image: linear-gradient(hsla(300, 1%, 21%, 0.493) 100%, rgb(0, 0, 0)), url(/img/imagen-header\ mobile.jpg);
+    min-height: 20rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header__title {
+    color: var(--color-principal);
+    position: absolute;
+    bottom: 2rem;
+    animation-name: changeColor;
+    animation-duration: 10s;
+}
+
+
+@keyframes changeColor {
+    0% {
+        color: white;
+    }
+
+    20% {
+        color: var(--color-principal);
+    }
+
+    40% {
+        color: white;
+
+    }
+
+    60% {
+        color: var(--color-principal);
+    }
+
+    80% {
+        color: white;
+    }
+
+    100% {
+        color: var(--color-principal);
+        ;
+    }
+
+}
+
+/** Section About **/
+
+.section__about {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.section__about__title {
+    font-size: 2rem;
+    color: var(--Very-Dark-Blue);
+}
+
+.section__about__title span {
+    color: var(--color-principal);
+}
+
+.section__about__parrafo {
+    font-size: 1.1rem;
+    color: var(--Grayish-Blue);
+}
+
+/** Section Servicios**/
+
+.section__services {
+    margin-top: 3rem;
+    background-image: linear-gradient(hsla(300, 1%, 21%, 0.623) 100%, rgb(0, 0, 0)), url(/img/imagen-de-fondo-precio.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.section__services__contenedor__principal {
+    display: flex;
+    flex-direction: column;
+}
+
+.services__title {
+    color: var(--color-principal);
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.services__contenedor {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 2px solid white;
+}
+
+.services__contenedor:last-of-type {
+    border-bottom: none;
+    padding-bottom: 2rem;
+}
+
+.services__contenedor__servicio {
+    color: var(--white);
+    font-weight: 300;
+}
+
+.services__contenedor__precio {
+    color: var(--color-principal);
+}
+
+/** Promociones **/
+.section__promociones {
+    margin-top: 3rem;
+}
+
+.promociones__gallery {
+    min-height: 100vh;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    gap: 2rem;
+    grid-auto-rows: 500px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.promocion__title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-principal);
+}
+
+.promocion__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/** Gallery **/
+
+.gallery {
+    margin-top: 3rem;
+    min-height: 100vh;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 3px solid var(--Very-Dark-Blue);
+    display: grid;
+    gap: 2rem;
+    grid-auto-rows: 500px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    overflow: hidden;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/** Formulario **/
+
+.section__formulario {
+    margin-top: 10rem;
+}
+
+.form {
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.75);
+    padding: 2rem 1rem;
+    position: relative;
+    background-color: rgb(102, 100, 100);
+    color: white;
+
+}
+
+.form__contenedor {
+    display: block;
+}
+
+.form__contendor--date {
+    display: flex;
+    flex-direction: column;
+    padding-top: .5rem;
+}
+
+.form__contendor--date input {
+    padding: .5rem;
+    width: 50%;
+}
+
+
+
+.form__logo {
+    border-radius: 50%;
+    position: absolute;
+    top: -3.5rem;
+    left: 8rem;
+    height: 6rem;
+}
+
+.form__title {
+    padding-top: 1.5rem;
+    font-size: 1.7rem;
+    color: var(--color-principal);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.form__title--servicio {
+
+    font-size: 1.2rem;
+    color: var(--color-principal);
+}
+
+.form label {
+    font-size: 1.2rem;
+    color: var(--color-principal);
+}
+
+.form__content__servicios {
+    padding-top: 1.3rem;
+}
+
+.form__servicios__contenedor {
+    display: flex;
+    gap: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.form__button {
+    display: block;
+    font-family: inherit;
+    font-size: 1.1rem;
+    color: black;
+    background-color: var(--color-principal);
+    box-shadow: 0px 0px 13px -3px rgba(0, 0, 0, 0.75);
+    border: none;
+    margin-top: 2rem;
+    padding: .8rem 2rem;
+}
+
+
+
+/** footer **/
+
+.footer {
+    background-color: rgb(56, 55, 55);
+    margin-top: 3rem;
+    min-height: 5rem;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-evenly;
+
+
+
+}
+
+.footer__title {
+
+    color: var(--color-principal);
+    font-size: 1.3rem;
+}
+
+.footer__contenedor__webs {
+    width: 30%;
+    margin: auto 0;
+}
+
+
+@media(min-width:768px) {
+
+    /** Navegacion **/
+    .nav {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 1rem;
+        background-color: #0a0a0a00;
+
+        position: initial;
+    }
+
+    .link {
+        padding: .5rem .5rem;
+        border-radius: .5rem;
+        font-size: 1.2rem;
+    }
+
+    .link:hover {
+        background-color: var(--color-principal);
+        color: #000000;
+        transition: .5s;
+    }
+
+    .icon__hamburger {
+        display: none;
+    }
+
+    /** Header **/
+
+    .header {
+        background-image: linear-gradient(hsla(300, 1%, 21%, 0.493) 100%, rgb(0, 0, 0)), url(/img/imagen-header\ destokp.jpg);
+        height: 35rem;
+    }
+
+    .header__title {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+
+
+
+    /** About **/
+
+    .section__about {
+        text-align: center;
+        padding: 5rem 10rem;
+    }
+
+    .section__about__title {
+        font-size: 3rem;
+    }
+
+    .section__about__parrafo {
+        font-size: 1.5rem;
+    }
+
+
+    /** Section Servicios**/
+
+
+    .services__title {
+        font-size: 3rem;
+    }
+
+    .services__contenedor {
+        padding: 1.5rem 0;
+    }
+
+    .services__contenedor__servicio {
+        font-size: 1.5rem;
+    }
+
+    .services__contenedor__precio {
+        font-size: 1.5rem;
+    }
+
+    /** Formulario **/
+
+    .section__formulario {
+        margin-top: 10rem;
+    }
+
+    .form {
+        box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.75);
+        padding: 2rem 1rem;
+        position: relative;
+        background-color: rgb(102, 100, 100);
+        color: white;
+        max-width: 700px;
+        margin-bottom: 3rem;
+    }
+
+    .form__contenedor {
+        display: block;
+    }
+
+    .form__title {
+        padding-top: 2.5rem;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .form__contendor--date {
+
+        padding-top: .5rem;
+    }
+
+    .form__contendor--date input {
+        padding: .5rem;
+        width: 50%;
+    }
+
+
+
+    .form__logo {
+        left: 18rem;
+        height: 7rem;
+    }
+
+
+
+    .form__title--servicio {
+
+        font-size: 1.2rem;
+        color: var(--color-principal);
+    }
+
+    .form label {
+        font-size: 1.5rem;
+        color: var(--color-principal);
+    }
+
+    .form__content__servicios {
+        padding-top: 1.3rem;
+    }
+
+    .form__servicios__contenedor {
+        display: flex;
+        gap: 0 1rem;
+        flex-wrap: wrap;
+    }
+
+    .form__button {
+        display: block;
+        font-family: inherit;
+        font-size: 1.1rem;
+        color: black;
+        background-color: var(--color-principal);
+        box-shadow: 0px 0px 13px -3px rgba(0, 0, 0, 0.75);
+        border: none;
+        margin-top: 2rem;
+        padding: .8rem 2rem;
+    }
+
+
+
+    /** footer **/
+
+    .footer {
+        background-color: rgb(56, 55, 55);
+        margin-top: 3rem;
+        min-height: 5rem;
+    }
+
+    .footer__content {
+
+        justify-content: space-between;
+        width: 90%;
+        line-height: 5rem;
+    }
+
+    .footer__title {
+        font-size: 1.7rem;
+    }
+
+    .footer__contenedor__webs {
+        line-height: initial;
+    }
+
+}
